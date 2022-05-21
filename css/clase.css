@@ -1,0 +1,302 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: boder-box;
+}
+
+.container__grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "header"
+        "main"
+        "aside"
+        "footer";
+    grid-template-rows: auto;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: auto
+}
+
+.encabezado {
+    grid-area: header;
+    background-color: rgb(49, 43, 43);
+    color: rgb(255, 255, 255);
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.encabezado__anclas ul {
+    gap: 10%;
+    list-style: none;
+    display: flex;
+    font-style: italic;
+    margin-right: 40%;
+
+}
+
+.ancla {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+
+.boton__ingresar {
+
+    border: solid rgb(173, 173, 168);
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+
+}
+
+.main {
+    grid-area: main;
+    flex-direction: column;
+
+}
+
+
+.cuerpo {
+    background-image: url(https://st.depositphotos.com/1063346/1340/i/450/depositphotos_13409056-stock-photo-assorted-sports-equipment-on-black.jpg);
+    color: rgb(255, 255, 255);
+    background-color: aqua;
+    background-color: aqua;
+    text-align: center;
+
+}
+
+.cuerpo__titulo {
+    font-style: oblique;
+    height: 100%;
+    font-size: 250%;
+}
+
+
+.cuerpo2 {
+    color: rgb(31, 22, 22);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, rgb(93, 28, 28), yellow);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+
+}
+
+.cuerpo2__divcomprar {
+    font-size: 150%;
+    font-style: oblique;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+
+
+
+
+}
+
+.cuerpo2__divcomprar__button {
+    border: groove;
+    width: 40%;
+    background-color: rgb(193, 185, 182);
+    font-weight: bold;
+    font-size: medium;
+    height: 90%;
+
+}
+
+.cuerpo2__divdescuento {
+    color: rgb(181, 173, 173);
+    background-image: linear-gradient(to top, rgb(93, 28, 28), yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+
+
+}
+
+.divdescuento__imagen {
+    display: flex;
+    width: 40%;
+    border-radius: 5%;
+
+}
+
+.publicidad {
+    grid-area: aside;
+    margin: 0%;
+    height: 25%;
+    background-color: rgb(16, 21, 21);
+    border: dashed yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.footer {
+    grid-area: footer;
+    height: 25%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 43, 43);
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    padding: 2%;
+}
+
+.footer div {
+    gap: 6%;
+}
+
+.footer div input {
+    border: solid rgb(173, 173, 168);
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .encabezado {
+        background-color: rgb(110, 110, 109);
+        flex-direction: column;
+
+    }
+
+    .encabezado__anclas ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        font-size: 180%;
+    }
+
+    .cuerpo__titulo {
+        font-size: 150%;
+
+    }
+
+    .cuerpo2 {
+        background-image: linear-gradient(to top, rgb(137, 33, 33), rgb(127, 127, 122));
+    }
+
+    .cuerpo2__divdescuento {
+        background-image: linear-gradient(to top, rgb(137, 33, 33), rgb(127, 127, 122));
+    }
+
+    .footer {
+        background-color: rgb(110, 110, 109);
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .ancla {
+        font-size: 60%;
+    }
+
+    .publicidad {
+        border: dashed rgb(224, 54, 12);
+    }
+
+
+
+    .encabezado__logo {
+
+        width: 40%;
+    }
+
+    .cuerpo2__divdescuento p {
+        font-size: small;
+    }
+}
+
+
+/* CSS PARA MI PÁGINA MUJERES*/
+
+.container__grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+        "main"
+        "section"
+        "footer";
+    grid-template-rows: auto;
+    margin: 0%;
+}
+
+.mujeres {
+    background-color: bisque;
+    margin: 0px;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mujeres__filtros {
+    margin-right: 80px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mujeres__filtros__titulo {
+
+    font-style: normal;
+    font-size: 25px;
+}
+
+.mujeres__filtros__subtitulo {
+    font-size: 20px;
+    font-style: normal;
+}
+
+.mujeres__fotos {
+    gap: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5%;
+}
+
+.mapa {
+    width: auto;
+    display: flex;
+    margin-right: 0%;
+    border: solid rgb(170, 38, 161);
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .mujeres {
+        background-color: rgb(236, 156, 8);
+        color: rgb(235, 230, 230);
+        flex-direction: column;
+    }
+
+    .mapa {
+        border: dashed rgb(16, 17, 14);
+        overflow: auto;
+        
+    }
+
+}

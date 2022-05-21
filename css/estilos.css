@@ -1,0 +1,174 @@
+/*
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: boder-box;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.encabezado {
+    display: flex;
+    background-color: rgb(49, 43, 43);
+    color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    gap: 50px;
+}
+
+.encabezado__anclas {
+    display: flex;
+    gap: 40px;
+    font-style: italic;
+
+}
+
+.ancla {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+.cuerpo {
+    background-image: url(https://st.depositphotos.com/1063346/1340/i/450/depositphotos_13409056-stock-photo-assorted-sports-equipment-on-black.jpg);
+    color: rgb(255, 255, 255);
+    background-color: aqua;
+    text-align: center;
+}
+
+.cuerpo__titulo {
+    font-style: oblique;
+    font-size: 40px;
+}
+
+
+
+.cuerpo2 {
+    background-color: rgb(10, 36, 48);
+    color: rgb(31, 22, 22);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+    background-image: url(../codervs/wireframe/mujeres\ 4.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.cuerpo2__divcomprar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-style: oblique;
+
+}
+
+
+
+
+
+.cuerpo2__divcomprar__button {
+    border: dotted;
+    width: 35%;
+    height: 50px;
+    background-color: rgb(193, 185, 182);
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+.cuerpo2__divdescuento {
+    display: flex;
+    color: rgb(181, 173, 173);
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(10, 36, 48);
+
+
+
+}
+
+.divdescuento__imagen {
+    display: flex;
+    width: 40%;
+
+
+}
+
+.publicidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    background-color: rgb(16, 21, 21);
+    border: dashed yellow;
+}
+
+.footer {
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 43, 43);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+
+
+}
+*/
+/* CSS DE LA PÁGINA MUJERES*/
+/*
+
+.mujeres {
+    display: flex;
+    background-color: bisque;
+    margin: 0px;
+    padding: 0%;
+    flex-direction: row;
+
+}
+
+.mujeres__filtros {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    margin-left: 10px;
+
+}
+
+.mujeres__filtros__titulo {
+
+    font-style: normal;
+    font-size: 25px;
+}
+
+.mujeres__filtros__subtitulo {
+    font-size: 20px;
+    font-style: normal;
+}
+
+.mujeres__fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+}
+
+.mapa {
+    width: auto;
+    display: flex;
+    margin-right: 0%;
+    border: solid rgb(170, 38, 161);
+
+}
+*/
