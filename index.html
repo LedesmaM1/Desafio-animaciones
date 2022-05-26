@@ -8,11 +8,12 @@
   <title>Indumentaria Deportiva</title>
   <link rel="stylesheet" href="./css/clase.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="conteiner__grid">
-
+  <!--<div class="conteiner__grid">
     <header class="encabezado">
       <a href="./index.html"><IMG class="logo"><img src="./assets/img/index/logo.png" width="60" alt="foto ramdom"
           href="../index.html"></IMG></a>
@@ -31,73 +32,99 @@
 
       <input class="boton__ingresar" type="button" value="Ingresar">
 
-    </header>
+  </header> -->
 
-    <main class="main">
-      <section class="cuerpo">
-        <div>
-          <h1 class="cuerpo__titulo">Artículos destacados</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand d-flex col-xl-4" href="./index.html"><img src="./assets/img/index/logo.png" width="14%" alt=""></a>
+        <input class="d-flex col-xl-2" type="search" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav d-flex col-xl-5">
+          <div class="row m-3">
+            <a class="nav-link text-white col-xl-3 col-sm-12" aria-current="page" href="./pages/mujeres.html">MUJERES</a>
+            <a class="nav-link  text-white col-xl-3 col-sm-12" aria-current="page" href="./pages/hombres.html">HOMBRES</a>
+            <a class="nav-link text-white col-xl-2 col-sm-12" aria-current="page" href="./pages/ninos.html">NIÑOS</a>
+            <a class="nav-link  text-white col-xl-3 col-sm-12" aria-current="page" href="./pages/ninos.html">DEPORTES</a>
+            <a class="nav-link  text-white col-xl-1 col-sm-12" aria-current="page" href="./pages/outlet.html">OUTLET</a>
+          </div>
         </div>
-        <div>
-          <!--Todas las imagenes son a modo de ejemplo, luego seleccionare las correspondientes-->
-          <img class="fotos__index" src="./assets/img/index/botines.jpg" width="200" alt="foto ramdom">
-          <img class="fotos__index" src="./assets/img/index/camperaNike.jfif" width="200" alt="foto ramdom">
-          <img class="fotos__index" src="./assets/img/index/remeraPumaRosa.jpg" width="200" alt="foto ramdom">
-          <img class="fotos__index" src="./assets/img/index/calzaMujerCombinada.jpg" width="200" alt="foto ramdom">
-          <img class="fotos__index" src="./assets/img/index/shortNegroNike.jfif" width="200" alt="foto ramdom">
-        </div>
-      </section>
-
-      <section class="cuerpo2">
-        <div class="cuerpo2__divcomprar">
-          <h2>Recomendado para ellas
-            <br>
-            Sé tu misma..
-            <br>
-            <br>
-          </h2>
-          <input type="button" value="Comprar" class="cuerpo2__divcomprar__button">
-        </div>
-
-        <div class="cuerpo2__divdescuento">
-          <img class="divdescuento__imagen" src="./assets/img/index/mujerGritando.jpg" width="600px">
-
-          <p>20 % DE DESCUENTO
-            (DE LUNES A VIERNES SOLO EFECTIVO).
-          </p>
-        </div>
-      </section>
-    </main>
+        <button type="button d-flex col-xl-1 " class="btn btn-secondary">Ingresar</button>
+      </div>
+    </nav>
+  </header>
 
 
-    <aside class="publicidad">
-      <!--aca va la publicidad, en este caso un video de youtube-->
-      <iframe width="1200" height="130" src="https://www.youtube.com/embed/NljGurzPM2g" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </aside>
 
 
-    <footer class="footer">
-      <h4>Todos los derechos reservados</h4>
-
-      <input type placeholder="Suscribite a nuestro Newsletter">
-
+  <main class="main">
+    <section class="cuerpo">
       <div>
+        <h1 class="cuerpo__titulo">Artículos destacados</h1>
+      </div>
+      <div>
+        <!--Todas las imagenes son a modo de ejemplo, luego seleccionare las correspondientes-->
+        <img class="fotos__index" src="./assets/img/index/botines.jpg" width="200" alt="foto ramdom">
+        <img class="fotos__index" src="./assets/img/index/camperaNike.jfif" width="200" alt="foto ramdom">
+        <img class="fotos__index" src="./assets/img/index/remeraPumaRosa.jpg" width="200" alt="foto ramdom">
+        <img class="fotos__index" src="./assets/img/index/calzaMujerCombinada.jpg" width="200" alt="foto ramdom">
+        <img class="fotos__index" src="./assets/img/index/shortNegroNike.jfif" width="200" alt="foto ramdom">
+      </div>
+    </section>
 
-        <input type="button" value="Instragram">
-
-        <input type="button" value="Facebook">
-
-        <input type="button" value="Twitter">
-
-        <input type="button" value="Youtube">
-
+    <section class="cuerpo2">
+      <div class="cuerpo2__divcomprar">
+        <h2>Recomendado para ellas
+          <br>
+          Sé tu misma..
+          <br>
+          <br>
+        </h2>
+        <input type="button" value="Comprar" class="cuerpo2__divcomprar__button">
       </div>
 
-    </footer>
+      <div class="cuerpo2__divdescuento">
+        <img class="divdescuento__imagen" src="./assets/img/index/mujerGritando.jpg" width="600px">
+
+        <p>20 % DE DESCUENTO
+          (DE LUNES A VIERNES SOLO EFECTIVO).
+        </p>
+      </div>
+    </section>
+  </main>
+
+
+  <aside class="publicidad">
+    <!--aca va la publicidad, en este caso un video de youtube-->
+    <iframe width="1200" height="130" src="https://www.youtube.com/embed/NljGurzPM2g" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </aside>
+
+
+  <footer class="footer">
+    <h4>Todos los derechos reservados</h4>
+
+    <input type placeholder="Suscribite a nuestro Newsletter">
+
+    <div>
+
+      <input type="button" value="Instragram">
+
+      <input type="button" value="Facebook">
+
+      <input type="button" value="Twitter">
+
+      <input type="button" value="Youtube">
+
+    </div>
+
+  </footer>
 
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

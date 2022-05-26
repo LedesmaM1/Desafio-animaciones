@@ -3,7 +3,24 @@
     padding: 0%;
     box-sizing: boder-box;
 }
+body {
+    width: 100%;
+    height: 100vh;
+    
+}
 
+
+
+
+
+
+
+
+
+
+
+
+/*
 .container__grid {
     display: grid;
     grid-template-columns: auto;
@@ -14,13 +31,9 @@
     grid-template-rows: auto;
 }
 
+*/
 
-body {
-    width: 100%;
-    height: 100vh;
-    overflow: auto
-}
-
+/*
 .encabezado {
     grid-area: header;
     background-color: rgb(49, 43, 43);
@@ -66,6 +79,8 @@ body {
 .boton__ingresar:hover {
     background-color: rgb(21, 214, 240);
 }
+*/
+
 
 .main {
     grid-area: main;
@@ -228,7 +243,7 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-
+/*
     .encabezado {
         background-color: rgb(110, 110, 109);
         flex-direction: column;
@@ -241,7 +256,7 @@ h2 {
         align-items: center;
         font-size: 180%;
     }
-
+*/
     .cuerpo__titulo {
         font-size: 150%;
 
@@ -270,17 +285,17 @@ h2 {
         border: dashed rgb(224, 54, 12);
     }
 
-
-
+}
+/*
     .encabezado__logo {
 
         width: 40%;
     }
-
+*/
     .cuerpo2__divdescuento p {
         font-size: small;
     }
-}
+
 
 
 /* CSS PARA MI PÁGINA MUJERES*/
