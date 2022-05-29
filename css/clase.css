@@ -3,24 +3,13 @@
     padding: 0%;
     box-sizing: boder-box;
 }
+
 body {
     width: 100%;
     height: 100vh;
-    
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*
 .container__grid {
     display: grid;
     grid-template-columns: auto;
@@ -29,65 +18,25 @@ body {
         "aside"
         "footer";
     grid-template-rows: auto;
+
 }
 
-*/
-
-/*
-.encabezado {
+/*HIJO 1-4*/
+.header {
     grid-area: header;
-    background-color: rgb(49, 43, 43);
-    color: rgb(255, 255, 255);
-    height: 50%;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-.encabezado__anclas ul {
-    gap: 10%;
-    list-style: none;
-    display: flex;
-    font-style: italic;
-    margin-right: 40%;
-
+    height: 20%;
 }
 
 
-.ancla {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-
-}
-
-.ancla:hover {
-    color: rgb(243, 78, 2);
-}
-
-.boton__ingresar {
-
-    border: solid rgb(173, 173, 168);
-    margin-top: 2%;
-    margin-bottom: 2%;
-
-
-}
-
-.boton__ingresar:hover {
-    background-color: rgb(21, 214, 240);
-}
-*/
-
-
+/*HIJO 2-4*/
 .main {
     grid-area: main;
+    width: 100%;
+    height: 20%;
     flex-direction: column;
 
 }
-
 
 .cuerpo {
     background-image: url(https://st.depositphotos.com/1063346/1340/i/450/depositphotos_13409056-stock-photo-assorted-sports-equipment-on-black.jpg);
@@ -100,7 +49,7 @@ body {
 
 .cuerpo__titulo {
     font-style: oblique;
-    height: 100%;
+    height: 20%;
     font-size: 250%;
     animation-name: cambiarColor;
     animation-duration: 5s;
@@ -149,24 +98,31 @@ body {
 }
 
 h2 {
-    animation: bounce;
-    animation-duration: 5s;
-
+    animation: rollIn;
+    animation-duration: 7s
 }
 
 .cuerpo2__divcomprar__button {
     border: groove;
-    width: 40%;
+    width: 30%;
     background-color: rgb(193, 185, 182);
     font-weight: bold;
     font-size: medium;
-    height: 90%;
+
 
 }
 
 .cuerpo2__divcomprar__button:hover {
     background-color: rgb(21, 214, 240);
+
 }
+
+.cuerpo2__divcomprar__button {
+    animation: flash;
+    animation-duration: 5s;
+}
+
+
 
 .cuerpo2__divdescuento {
     color: rgb(181, 173, 173);
@@ -175,10 +131,11 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0%;
+
 
 
 }
+
 
 .divdescuento__imagen {
     display: flex;
@@ -199,15 +156,12 @@ h2 {
 
     }
 
-
-
-
 }
 
-.publicidad {
+/*HIJO 3-4*/
+.aside {
     grid-area: aside;
-    margin: 0%;
-    height: 25%;
+    width: 100%;
     background-color: rgb(16, 21, 21);
     border: dashed yellow;
     display: flex;
@@ -216,47 +170,38 @@ h2 {
 
 }
 
-
+/*HIJO 4-4*/
 .footer {
     grid-area: footer;
-    height: 25%;
-    color: rgb(255, 255, 255);
-    background-color: rgb(49, 43, 43);
+    height: 10%;
     display: flex;
     justify-content: center;
-    gap: 6%;
-    padding: 2%;
+    align-items: center;
+    font-size: 80%;
+    gap: 20%;
+    background-color: rgb(100, 98, 98);
+    color: aliceblue;
 }
 
-.footer div {
-    gap: 6%;
-}
-
-.footer div input {
-    border: solid rgb(173, 173, 168);
-
+.botones {
+    display: flex;
+    gap: 2%;
 
 }
 
-.footer div input:hover {
+.botoncito:hover {
     background-color: rgb(21, 214, 240);
 }
 
+.texto {
+    font-size: 140%;
+}
+
+
+/*MEDIAQUERIS DE PAGINA INDEX*/
 @media screen and (max-width: 800px) {
-/*
-    .encabezado {
-        background-color: rgb(110, 110, 109);
-        flex-direction: column;
 
-    }
 
-    .encabezado__anclas ul {
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        font-size: 180%;
-    }
-*/
     .cuerpo__titulo {
         font-size: 150%;
 
@@ -270,31 +215,39 @@ h2 {
         background-image: linear-gradient(to top, rgb(137, 33, 33), rgb(127, 127, 122));
     }
 
-    .footer {
-        background-color: rgb(110, 110, 109);
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .ancla {
-        font-size: 60%;
-    }
-
-    .publicidad {
-        border: dashed rgb(224, 54, 12);
-    }
-
-}
-/*
-    .encabezado__logo {
-
-        width: 40%;
-    }
-*/
     .cuerpo2__divdescuento p {
         font-size: small;
     }
+
+    .cuerpo2__divcomprar__button {
+        width: auto;
+    }
+
+    .aside {
+        border: dashed rgb(224, 54, 12);
+    }
+
+    .footer {
+        background-color: rgb(110, 110, 109);
+        flex-direction: column;
+
+
+    }
+
+    .texto {
+        font-size: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -383,4 +336,31 @@ h2 {
 
     }
 
+}
+
+
+
+
+
+
+/*CSS PARA LA PÁGINA CONTACTO*/
+
+.mainContacto {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/Contacto/hombreSaltando.jpg);
+    padding-left: 10%;
+    padding-top: 8%;
+    overflow: hidden;
+}
+
+.tituloContacto {
+    animation: fadeInDown;
+    animation-duration: 3s;
+    font-style: normal;
+}
+
+.btn {
+    animation: rotateIn;
+    animation-duration: 5s;
 }
