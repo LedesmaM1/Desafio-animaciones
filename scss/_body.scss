@@ -1,0 +1,24 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: boder-box;
+}
+
+body {
+    width:$ancho-100;
+    height:$alto-100;
+
+}
+
+.container__grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "header"
+        "main"
+        "aside"
+        "footer";
+    grid-template-rows: auto;
+
+}
+

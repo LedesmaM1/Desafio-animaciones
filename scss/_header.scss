@@ -1,0 +1,11 @@
+
+.header {
+    grid-area: header;
+    width:$ancho-100;
+    height: $alto-20;
+        .nav-link:hover{
+            background-color: rgb(73, 66, 66);
+        }
+
+        
+}

@@ -1,0 +1,121 @@
+
+/*main de Index*/
+.main { 
+    grid-area: main;
+    width:$ancho-100;
+    height:$alto-20;
+    flex-direction: column;
+        .cuerpo {
+            background-image: url(https://st.depositphotos.com/1063346/1340/i/450/depositphotos_13409056-stock-photo-assorted-sports-equipment-on-black.jpg);
+            color: rgb(255, 255, 255);
+            background-color: aqua;
+            background-color: aqua;
+            text-align: center;
+                .cuerpo__titulo {
+                    font-style:$letra-oblique;
+                    height:$alto-20;
+                    font-size: 250%;
+                    animation-name: cambiarColor;
+                    animation-duration: 5s;
+
+                }
+
+                @keyframes cambiarColor {
+                    from {
+                        color: brown;
+                    }
+
+                    20% {
+                        color: rgb(223, 131, 12);
+                    }
+
+                    30% {
+                        color: blue;
+                    }
+                }
+            
+                .fotos__index:hover {
+                    border: groove yellow;
+                }
+     }
+
+
+        .cuerpo2 {
+            color: rgb(31, 22, 22);
+            background-repeat: no-repeat;
+            background-image: linear-gradient(to top, rgb(93, 28, 28), yellow);
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+
+                .cuerpo2__divcomprar {
+                    font-size: 150%;
+                    font-style: $letra-oblique;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 2%;
+                
+
+                        h2 {
+                            animation: rollIn;
+                            animation-duration: 7s
+                        }
+                        .cuerpo2__divcomprar__button {
+                            border: groove;
+                            width: 30%;
+                            background-color: rgb(193, 185, 182);
+                            font-weight: bold;
+                            font-size: medium;
+                            animation: flash;
+                            animation-duration: 5s;
+                        &:hover {
+                                background-color:$fondoturquesa;
+
+                        }}
+                }
+
+
+
+                .cuerpo2__divdescuento {
+                    color: rgb(181, 173, 173);
+                    background-image: linear-gradient(to top, rgb(93, 28, 28), yellow);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                        .divdescuento__imagen {
+                            display: flex;
+                            width: 40%;
+                            border-radius: 5%;
+                            animation-name: mover;
+                            animation-duration: 5s;
+
+                        }
+
+                        @keyframes mover {
+                            0% {
+                                transform: translateX(100%);
+                            }
+
+                            100% {
+                                transform: translate(0%);
+
+                            }
+
+                        }
+                    }
+                }
+}
+
+
+
+
+
+
+
+
+

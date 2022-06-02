@@ -1,0 +1,42 @@
+
+/*MEDIAQUERIS DE PAGINA INDEX*/
+@media screen and (max-width: 800px) {
+
+
+    .cuerpo__titulo {
+        font-size: 150%;
+
+    }
+
+    .cuerpo2 {
+        background-image: linear-gradient(to top, rgb(137, 33, 33), rgb(127, 127, 122));
+    }
+
+    .cuerpo2__divdescuento {
+        background-image: linear-gradient(to top, rgb(137, 33, 33), rgb(127, 127, 122));
+    }
+
+    .cuerpo2__divdescuento p {
+        font-size: small;
+    }
+
+    .cuerpo2__divcomprar__button {
+        width: auto;
+    }
+
+    .aside {
+        border: dashed rgb(224, 54, 12);
+    }
+
+    .footer {
+        background-color: rgb(110, 110, 109);
+        flex-direction: column;
+
+
+    }
+
+    .texto {
+        font-size: 100%;
+    }
+
+}

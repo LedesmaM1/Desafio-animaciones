@@ -1,0 +1,24 @@
+.footer {
+    grid-area: footer;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    gap: 20%;
+    background-color: rgb(100, 98, 98);
+    color: aliceblue; 
+    .texto {
+        font-size: 140%;
+    }
+    .botones {
+    display: flex;
+    gap: 2%;
+
+        .botoncito:hover {
+        background-color: $fondoturquesa;
+        }
+
+    }
+
+}
