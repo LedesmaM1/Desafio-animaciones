@@ -363,7 +363,9 @@ h2 {
     font-style: normal;
 }
 
+
 .btn {
+    
     animation: rotateIn;
     animation-duration: 5s;
 }

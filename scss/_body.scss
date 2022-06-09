@@ -10,7 +10,7 @@ body {
     height:$alto-100;
 
 }
-
+/*index*/
 .container__grid {
     display: grid;
     grid-template-columns: auto;
@@ -20,5 +20,16 @@ body {
         "footer";
     grid-template-rows: auto;
 
+}
+/*MUJERES*/
+.container__grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+        "main"
+        "section"
+        "footer";
+    grid-template-rows: auto;
+    margin: 0%;
 }
 

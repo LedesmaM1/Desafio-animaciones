@@ -6,7 +6,7 @@
     align-items: center;
     font-size: 80%;
     gap: 20%;
-    background-color: rgb(100, 98, 98);
+    background-color: map-get($mapa-colores, gris_footer);
     color: aliceblue; 
     .texto {
         font-size: 140%;

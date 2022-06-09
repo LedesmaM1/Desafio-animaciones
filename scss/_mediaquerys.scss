@@ -29,14 +29,32 @@
     }
 
     .footer {
-        background-color: rgb(110, 110, 109);
+        background-color: map-get($mapa-colores, gris_meadiaquiery );
         flex-direction: column;
 
 
     }
 
-    .texto {
-        font-size: 100%;
+    .footer_div_texto {
+        font-size: 60%;
+    }
+
+}
+
+/*MUJERES*/
+@media screen and (max-width: 800px) {
+
+
+    .mujeres {
+        background-color: rgb(236, 156, 8);
+        color: rgb(235, 230, 230);
+        flex-direction: column;
+    }
+
+    .mapa {
+        border: dashed rgb(16, 17, 14);
+        overflow: auto;
+
     }
 
 }

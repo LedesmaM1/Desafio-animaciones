@@ -44,18 +44,13 @@
             color: rgb(31, 22, 22);
             background-repeat: no-repeat;
             background-image: linear-gradient(to top, rgb(93, 28, 28), yellow);
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-around;
+            @include flex(center,row,space-around);
+
 
                 .cuerpo2__divcomprar {
                     font-size: 150%;
                     font-style: $letra-oblique;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex (center, column, center);
                     margin: 2%;
                 
 
@@ -66,7 +61,7 @@
                         .cuerpo2__divcomprar__button {
                             border: groove;
                             width: 30%;
-                            background-color: rgb(193, 185, 182);
+                            background-color: map-get($mapa-colores, gris_main);
                             font-weight: bold;
                             font-size: medium;
                             animation: flash;
@@ -82,11 +77,8 @@
                 .cuerpo2__divdescuento {
                     color: rgb(181, 173, 173);
                     background-image: linear-gradient(to top, rgb(93, 28, 28), yellow);
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-
+                    @include flex(center,column,center);
+                    
                         .divdescuento__imagen {
                             display: flex;
                             width: 40%;
@@ -112,8 +104,82 @@
 }
 
 
+/*  PÁGINA MUJERES*/
+
+.mujeres {
+
+    background-color: bisque;
+    margin: 0px;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+}
 
 
+.mujeres__filtros {
+    margin-right: 80px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mujeres__filtros__titulo {
+    font-style: normal;
+    font-size: 25px;
+    animation: fadeInDown;
+    animation-duration: 3s;
+}
+
+
+
+.mujeres__filtros__subtitulo {
+    @extend.mujeres__filtros__titulo;
+    font-size: 20px;
+    
+
+}
+
+.mujeres__fotos {
+    gap: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5%;
+}
+
+.fotito:hover {
+    border: groove yellow;
+}
+
+
+
+
+
+
+
+
+/*MAIN DE PÁGINA CONTACTO*/ 
+
+.mainContacto {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/Contacto/hombreSaltando.jpg);
+    padding-left: 10%;
+    padding-top: 8%;
+    overflow: hidden;
+}
+
+.tituloContacto {
+    animation: fadeInDown;
+    animation-duration: 3s;
+    font-style: normal;
+}
+
+.btn {  
+    animation: rotateIn;
+    animation-duration: 5s;
+}
 
 
 

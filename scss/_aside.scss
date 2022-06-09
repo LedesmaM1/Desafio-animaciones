@@ -2,10 +2,21 @@
 .aside {
     grid-area: aside;
     width: $ancho-100;
-    background-color: rgb(16, 21, 21);
+    background-color: map-get($mapa-colores, negro);
     border: dashed yellow;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/*MAPA MUJERES*/
+.mapa {
+    width: auto;
+    display: flex;
+    margin-right: 0%;
+    border: solid rgb(170, 38, 161);
 
+}
+
+.mapa:hover {
+    border: groove rgb(17, 241, 241);
 }
